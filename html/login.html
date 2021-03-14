@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Women Safety Application</title>
+        <link rel = "stylesheet" href="../stylesheets/main.css">
+    </head>
+    <body>
+        <div class = "logo">
+            <div class = "wallpaper"></div>
+       </div>
+        <div class="hero"></div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>  
+            </div>
+            <form id="login" class = "input-group input-group-login">
+                <input type = "email" class="input-field" placeholder="Email ID" required/>
+                <input type = "password" class="input-field" placeholder="Enter password" required/>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class = "input-group input-group-reg">
+                <!-- User creds-->
+                <input type = "text" class="input-field col1" placeholder="First Name" required/>
+                <input type = "text" class="input-field col2" placeholder="Last Name" required/>
+                <input type = "email" class="input-field col1" placeholder="Email ID" required/>
+                <input type = "tel" class="input-field col2" placeholder="Phone Number" required/>
+                <input type = "password" class="input-field" placeholder="Enter password" required/>
+
+                <!--Emergency contacts-->
+                
+                    <br><br><label><b>Enter details of any three Emergency contacts:- </b></label><br>
+                    <input type = "text" class="input-field col1" placeholder="First Name" required/>
+                    <input type = "text" class="input-field col2" placeholder="Last Name" required/>
+                    <input type = "email" class="input-field col1" placeholder="Email ID" required/>
+                    <input type = "tel" class="input-field col2" placeholder="Phone Number" required/>
+                    <input type = "text" class="input-field col1" placeholder="First Name" required/>
+                    <input type = "text" class="input-field col2" placeholder="Last Name" required/>
+                    <input type = "email" class="input-field col1" placeholder="Email ID" required/>
+                    <input type = "tel" class="input-field col2" placeholder="Phone Number" required/>
+                    <input type = "text" class="input-field col1" placeholder="First Name" required/>
+                    <input type = "text" class="input-field col2" placeholder="Last Name" required/>
+                    <input type = "email" class="input-field col1" placeholder="Email ID" required/>
+                    <input type = "tel" class="input-field col2" placeholder="Phone Number" required/>
+                
+                <input type="checkbox" class="check-box" required><span>I agree to the terms and conditions *</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+
+        <script>
+            var loginBtn = document.getElementById("login");
+            var registerBtn = document.getElementById("register");
+            var submitBtn = document.getElementById("btn"); 
+
+            function register(){
+                loginBtn.style.left="-650px";
+                registerBtn.style.left="50px";
+                submitBtn.style.left="110px";
+            }
+
+            function login(){
+                loginBtn.style.left="50px";
+                registerBtn.style.left="750px";
+                submitBtn.style.left="0px";
+            }
+        </script>
+    </body>
+</html>
